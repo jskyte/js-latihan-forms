@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<title>Percobaan Forms</title>
-		<link rel="stylesheet" href="forms.css">
-	</head>
 
-	<body>
-		<div class="container">
+<head>
+	<title>Percobaan Forms</title>
+	<link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+	<div class="container">
 		<h1>Contoh Formulir</h1>
-			<forms autocomplete='off'>
+		<hr>
+		<forms autocomplete='off'>
 
+			<fieldset>
+				<legend>Login Details:</legend>
 				<label for="username">Username </label> <br>
 				<input type="text" id="username" name="inputusername"> <br><br>
 
@@ -20,6 +24,10 @@
 				<label for="password">Password</label><br>
 				<input type="password" id="password" name="inputpassword"><br><br>
 
+			</fieldset>
+
+			<fieldset style="margin-top: 20px">
+				<legend>User Data:</legend>
 				<label for="firstname">Nama Depan </label> <br>
 				<input type="text" id="firstname" name="inputfirstname"> <br><br>
 
@@ -27,7 +35,7 @@
 				<input type="text" id="lastname" name="inputlastname"> <br><br>
 
 				<label for="kelamin">Jenis Kelamin </label> <br>
-				<select name="inputkelamin" id="kelamin"> Pilih Jenis Kelamin 
+				<select name="inputkelamin" id="kelamin"> Pilih Jenis Kelamin
 					<option value="Laki-laki">Laki-laki</option>
 					<option value="Perempuan">Perempuan</option>
 				</select> <br><br>
@@ -38,10 +46,13 @@
 				<label for="alamat">Alamat Rumah</label><br>
 				<textarea id="alamat" name="inputalamat" row="4" cols="50"></textarea> <br><br>
 
-				<input type="submit" name="submit" value="Kirim" onclick="alert('data tersimpan')">
+			</fieldset>
+
+			<input type="submit" name="submit" value="Kirim" onclick="alert('data tersimpan')" style="margin-top: 10px; margin-left:3px">
 
 
-			</forms>	
-		</div>	
-	</body>
+		</forms>
+	</div>
+</body>
+
 </html>
