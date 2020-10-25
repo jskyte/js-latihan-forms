@@ -1,0 +1,17 @@
+body {
+	background: grey;
+	margin: 2%;
+}
+
+h1 {
+	text-align: center;
+}
+
+.container{
+	background: white;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	text-align: left;
+}

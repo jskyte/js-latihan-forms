@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Percobaan Forms</title>
+		<link rel="stylesheet" href="forms.css">
+	</head>
+
+	<body>
+		<div class="container">
+		<h1>Contoh Formulir</h1>
+			<forms action='forms.html' method='post' enctype='multipart/form-data' autocomplete='off'>
+
+				<label for="username">Username </label> <br>
+				<input type="text" id="username" name="inputusername"> <br><br>
+
+				<label for="email">Email </label> <br>
+				<input type="email" id="email" name="inputemail" placeholder="Masukkan email"> <br><br>
+
+				<label for="password">Password</label><br>
+				<input type="password" id="password" name="inputpassword"><br><br>
+
+				<label for="firstname">Nama Depan </label> <br>
+				<input type="text" id="firstname" name="inputfirstname"> <br><br>
+
+				<label for="lastname">Nama Belakang </label> <br>
+				<input type="text" id="lastname" name="inputlastname"> <br><br>
+
+				<label for="kelamin">Jenis Kelamin </label> <br>
+				<select name="inputkelamin" id="kelamin"> Pilih Jenis Kelamin 
+					<option value="Laki-laki">Laki-laki</option>
+					<option value="Perempuan">Perempuan</option>
+				</select> <br><br>
+
+				<label for="tanggallahir"> Tanggal Lahir </label> <br>
+				<input type="date" id="tanggallahir" name="inputtanggallahir"> <br><br>
+
+				<label for="alamat">Alamat Rumah</label><br>
+				<textarea id="alamat" name="inputalamat" row="4" cols="50"></textarea> <br><br>
+
+				<input type="submit" name="submit" value="Kirim" onclick="alert('data tersimpan')">
+
+
+			</forms>	
+		</div>	
+	</body>
+</html>
